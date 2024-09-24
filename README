@@ -1,0 +1,34 @@
+# Immunization Schedule Project
+
+## Overview
+
+The Immunization Schedule project is a Python application designed to help manage children's immunization schedules. It utilizes SQLAlchemy as an ORM to interact with a SQLite database and Click for a command-line interface (CLI). The project aims to provide an efficient way to track children, diseases, and scheduled immunization appointments.
+
+## Features
+
+- Adds children to the database with their names and ages.
+- Adds diseases and their corresponding vaccines, along with the age at which the vaccine should be administered.
+- Schedule immunization appointments based on the child's age and the required vaccines.
+
+## Technologies Used
+
+- Python
+- SQLAlchemy (ORM)
+- SQLite (Database)
+- Click (CLI)
+
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/immunization_schedule.git
+cd immunization_schedule
+
+### created the database and tables, run: python database.py
+### To add a child to the database, run: python cli.py add-child <name> <age>
+### To add a disease and its vaccine, run: python cli.py add-disease <disease_name> <vaccine> <age_for_vaccine>
+### To schedule an appointment for a child based on their age, run:python cli.py schedule-appointment <child_id>
+
+This work is originlly made by Madam Nonzamo and it is open for more adjustments to it and also modification
+
+
